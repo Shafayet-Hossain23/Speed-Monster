@@ -1,3 +1,4 @@
+// console.log('history');
 const histories = document.getElementById("histories");
 
 function addHistory(questionText, timeTaken, errorCount) {
