@@ -40,7 +40,7 @@
             </div>
 
             <div>
-                <h3 class="pt-4">Differences between local storage and session storage</h3>
+                <h3 class="pt-4">Differences between local storage and session storage?</h3>
 
                 <p>
                     The Storage interface of the Web Storage API provides access to a particular domain's session or
@@ -51,35 +51,42 @@
                     <li>They store key/value pairs for a particular domain.</li>
                     <li>The values stored may only be strings.</li>
                     <li>They have a limit of around 5MB of storage space.</li>
-                </ul>
+                </ul> <br>
+                <b>The one major difference between localStorage and sessionStorage is the expiration date:</b> <br>
+                <br>
+                <b>localStorage </b>persists the storage across browser sessions. So even if the domain is opened in a
+                new tab, or the browser is closed and reopened, the storage is saved. There is no expiration. <br>
+                <b>sessionStorage</b> is cleared when the page session ends. A page session lasts as long as the tab or
+                the browser is open. Therefore, when you open a new tab or a new window, this creates a new session and
+                new storage.
                 </p>
             </div>
             <div>
-                <h3 class="pt-4">Why it is essential to explore browser and debug for every programmer?</h3>
+                <h3 class="pt-4">Differences between global scope and block scope?</h3>
 
                 <p>
-                    Debugging is important because it allows software engineers and developers to fix errors in a
-                    program before releasing it to the public. It's a complementary process to testing, which involves
-                    learning how an error affects a program overall. Debugging allows to run your code step by step in a
-                    debugging tool like Visual Studio and chrome devtool, to find the exact point where you made a
-                    programming mistake. You
-                    understand what corrections you need to make in your code and debugging tools often allow you
-                    to make temporary changes so you can continue running the program. <br>
-                    <b>Here are the some question what you have to must know as a web-developer :</b>
+                    In a browser environment, the <b>global scope</b> is controlled by the window object while in Node.
+                    js, it's controlled by the global object.<b>Block scopes</b> are what you get when you use if
+                    statements, for statements, and the like. <br>
+                    <b>Global Level Scope:</b> In a programming environment, the global scope is the scope that
+                    contains,
+                    and is visible in, all other scopes. In client-side JavaScript, the global scope is generally the
+                    web page inside which all the code is being executed. <br>
+                    <b>Block Level Scope:</b> This scope restricts the variable that is declared inside a specific
+                    block, from access by the outside of the block. The let & const keyword facilitates the variables to
+                    be block scoped.
                 </p>
             </div>
             <div>
-                <h3 class="pt-4">Why it is essential to explore browser and debug for every programmer?</h3>
+                <h3 class="pt-4">How does the Event Loop works in JavaScript?</h3>
 
                 <p>
-                    Debugging is important because it allows software engineers and developers to fix errors in a
-                    program before releasing it to the public. It's a complementary process to testing, which involves
-                    learning how an error affects a program overall. Debugging allows to run your code step by step in a
-                    debugging tool like Visual Studio and chrome devtool, to find the exact point where you made a
-                    programming mistake. You
-                    understand what corrections you need to make in your code and debugging tools often allow you
-                    to make temporary changes so you can continue running the program. <br>
-                    <b>Here are the some question what you have to must know as a web-developer :</b>
+                    JavaScript has a runtime model based on an event loop, which is responsible for executing the
+                    code, collecting and processing events, and executing queued sub-tasks. This model is quite
+                    different from models in other languages like C and Java.The Event Loop has one simple job — to
+                    monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will
+                    take the first event from the queue and will push it to the Call Stack, which effectively runs
+                    it. Such an iteration is called a tick in the Event Loop.
                 </p>
             </div>
             <div>
